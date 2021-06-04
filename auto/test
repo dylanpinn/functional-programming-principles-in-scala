@@ -2,3 +2,4 @@
 set -e
 
 (cd practice-programming-assignment && sbt test)
+(cd recfun && sbt test)
