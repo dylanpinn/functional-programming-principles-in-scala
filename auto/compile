@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+
+(cd practice-programming-assignment && sbt compile)

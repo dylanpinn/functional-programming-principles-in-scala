@@ -1,10 +1,10 @@
 ---
-name: Test
+name: Compile
 on:
   pull_request:
   push:
 jobs:
-  test:
+  compile:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -14,4 +14,4 @@ jobs:
         with:
           java-version: adopt@1.11
       - name: Test
-        run: auto/test
+        run: auto/compile
