@@ -1,0 +1,17 @@
+---
+name: Compile
+on:
+  pull_request:
+  push:
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Scala
+        uses: olafurpg/setup-scala@v12
+        with:
+          java-version: adopt@1.11
+      - name: Compile
+        run: auto/compile
