@@ -13,5 +13,5 @@ jobs:
         uses: olafurpg/setup-scala@v12
         with:
           java-version: adopt@1.11
-      - name: Test
+      - name: Compile
         run: auto/compile
