@@ -1,6 +1,6 @@
 package recfun
 
-object RecFun extends RecFunInterface:
+object RecFun extends RecFunInterface {
 
   def main(args: Array[String]): Unit =
     println("Pascal's Triangle")
@@ -21,9 +21,15 @@ object RecFun extends RecFunInterface:
   /**
    * Exercise 2
    */
-  def balance(chars: List[Char]): Boolean = ???
+  def balance(chars: List[Char]): Boolean = {
+    if (chars.isEmpty)
+      return true
+    // Check if head is parens
+  }
 
   /**
    * Exercise 3
    */
   def countChange(money: Int, coins: List[Int]): Int = ???
+
+}
